@@ -2,7 +2,9 @@
 
 ### preparation
 
-1. Download graphaware timetree and copy into the plugins folder
+* Install Neo4j 3.0.1 Community Edition
+
+* Download graphaware timetree and copy into the plugins folder
 
 ```
 http://products.graphaware.com/download/framework-server-community/latest
@@ -10,14 +12,14 @@ http://products.graphaware.com/download/timetree/latest
 
 ```
 
-2. install gems
+* install gems (neo4j-core 6.1.4)
 
 ```
 bundle install
 
 ```
 
-3. run the code
+* run the code
 ```
 ruby ./code-that-works.rb
 ruby ./code-that-hangs.rb
