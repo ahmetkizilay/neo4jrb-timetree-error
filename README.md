@@ -11,6 +11,10 @@ http://products.graphaware.com/download/framework-server-community/latest
 http://products.graphaware.com/download/timetree/latest
 
 ```
+* enable graphaware extension in `./conf/neo4j.conf`
+```
+dbms.unmanaged_extension_classes=com.graphaware.server=/graphaware
+```
 
 * install gems (neo4j-core 6.1.4)
 
