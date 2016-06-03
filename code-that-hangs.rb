@@ -12,10 +12,11 @@ def test_with_tx
     CREATE (tsn:TSN)
     SET tsn = { value: 'prop1', val2: 2 }
     WITH tsn
-    CALL ga.timetree.events.attach({node: tsn, time: timestamp(), resolution: 'Millisecond', relationshipType: 'HAS_EVENT'})
-    YIELD node as n
-    RETURN n;
+    CALL ga.timetree.single({time: timestamp(), resolution: 'Millisecond', create: true})
+    YIELD instant as instant
+    CREATE (tsn)-[:HAS_EVENT]->(instant)
     "
+
     Neo4j::Session.query(tsn_test)
   rescue Exception => exp
     puts exp.message

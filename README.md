@@ -29,7 +29,11 @@ ruby ./code-that-works.rb
 ruby ./code-that-hangs.rb
 ```
 
-
+### REST API with httpie
+you can try to replicate the rest api with httpie (requires httpie)
+```
+/bin/bash ./requests/test-should-hangs.sh
+```
 ### Error
 
 GraphAware timetree stored procedures cause Neo4j to hang when called inside a transaction.

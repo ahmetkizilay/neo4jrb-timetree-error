@@ -1,0 +1,9 @@
+{
+  "statements": [
+    {
+      "statement": "MATCH (n) DETACH DELETE n"
+    }
+  ],
+  "parameters": null,
+  "resultDataContents": ["row","REST"]
+}

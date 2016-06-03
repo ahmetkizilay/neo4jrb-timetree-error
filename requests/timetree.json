@@ -1,0 +1,9 @@
+{
+  "statements": [
+    {
+      "statement": "CREATE (tsn:TSN)\nSET tsn = { value: 'prop1', val2: 2 }\nWITH tsn\nCALL ga.timetree.single({time: timestamp(), resolution: 'Millisecond', create: true})\nYIELD instant as instant\nCREATE (tsn)-[:HAS_EVENT]->(instant)",
+      "parameters": null,
+      "resultDataContents": ["row","REST"]
+    }
+  ]
+}
