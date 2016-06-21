@@ -2,7 +2,7 @@
 
 ### preparation
 
-* Install Neo4j 3.0.1 Community Edition
+* Install Neo4j 3.0.3 Community Edition
 
 * Download graphaware timetree and copy into the plugins folder
 
